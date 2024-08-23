@@ -1,28 +1,17 @@
 import React from "react";
 import Navbar from "../components/navbar";
-import Person from "../assets/person.jpeg";
+import TopNavbar from "../components/navbarTop";
 import wishlist from "../assets/buying-wishlist.jpg";
 import tabungan from "../assets/tabungan.jpg";
 import pengeluaran from "../assets/pengeluaran.jpeg";
 import pemasukan from "../assets/pemasukan.jpg";
 const Home = () => {
   return (
-    <div className="container">
+    <div className="Home">
       <div className="wrapper flex flex-col-reverse">
         <Navbar />
         <div className="header ">
-          <div className="navbar-top shadow-xl mb-5 sticky top-0">
-            <div className="box-top flex justify-between items-center p-2 bg-text sticky top-0">
-              <div className="rigt-item">
-                <p className="text-xl font-semibold italic text-secondary">
-                  MoneyManage
-                </p>
-              </div>
-              <div className="left-item w-14">
-                <img src={Person} alt="person.jgp" className="rounded-full" />
-              </div>
-            </div>
-          </div>
+          <TopNavbar />
           <div className="greeting px-3 mb-3">
             <p className="text-lg italic text-slate-700">
               Welcome Atio Wahyudi Saputra !! 🙌
