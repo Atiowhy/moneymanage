@@ -10,7 +10,7 @@ import {
   faImage,
   faRightFromBracket,
 } from "@fortawesome/free-solid-svg-icons";
-import Person from "../assets/person.jpeg";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -22,9 +22,10 @@ const Navbar = () => {
             size="2xl"
             className="group-hover:text-text duration-300"
           />
-          <a href="/saving" className="text-text text-sm ">
+
+          <Link to="/saving" className="text-text text-sm ">
             Tabungan
-          </a>
+          </Link>
         </div>
         <div className="box-icon1 flex flex-col items-center justify-center group">
           <FontAwesomeIcon
